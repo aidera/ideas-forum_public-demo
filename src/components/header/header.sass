@@ -1,0 +1,409 @@
+@import "../../assets/styles/mixins"
+
+header
+  min-height: 300px
+  position: relative
+  color: white
+  background-color: #4590BE
+
+  a
+    transition: .25s ease-in-out
+    color: white
+    border: none
+    &:hover
+      opacity: 0.7
+      border: none
+    
+  .image-container
+    position: absolute
+    z-index: 1
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    overflow: hidden
+
+  .image
+    background-image: url("/images/header-background-2.png")
+    background-position: center 70%
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    z-index: 1
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    overflow: hidden
+
+  .image-overlay
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: #0058AA
+    opacity: .5
+    z-index: 1
+    user-select: none
+
+  .decor
+    position: absolute
+    bottom: 0
+    left: 0
+    z-index: 2
+    user-select: none
+    @media(max-width: 700px)
+      display: none
+
+  .top-part
+    width: 100%
+    height: 58px
+    border-bottom: 1px solid rgba(255,255,255,0.2)
+    position: relative
+    z-index: 3
+    @media(max-width: 700px)
+      height: auto
+
+    .top-part__container
+      display: flex
+      height: 100%
+      justify-content: space-between
+      flex-wrap: wrap
+
+      .top-part__logos
+        height: 100%
+        display: flex
+        align-content: center
+        align-items: center
+        user-select: none
+        a
+          height: 35px
+          margin-right: 48px
+          img
+            height: 100%
+          &:last-child
+            margin-right: 0
+            height: 28px
+        @media (max-width: 700px)
+          display: none
+
+
+      .top-part__contacts
+        height: 100%
+        display: flex
+        align-content: center
+        align-items: center
+        flex-wrap: wrap
+        @media(max-width: 700px)
+          justify-content: space-between
+          width: 100%
+          padding: 20px 0
+          text-align: center
+        a.phone
+          margin-right: 40px
+          font-size: 13px
+          font-weight: bold
+          @media(max-width: 700px)
+            margin-right: 0
+
+        .socials
+          user-select: none
+          a
+            margin-right: 16px
+            &:last-child
+              margin-right: 0
+
+
+
+
+  .main-part
+    position: relative
+    z-index: 3
+    padding-top: 28px
+    min-height: 242px
+
+    .main-part__container
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      align-content: flex-start
+      @media(max-width: 700px)
+        justify-content: space-between
+        flex-wrap: wrap
+        align-items: center
+        align-content: center
+
+
+      .main-part__title
+        display: flex
+        align-items: center
+        align-content: center
+
+        img
+          user-select: none
+          @media(max-width: 700px)
+            width: 75px
+            height: 75px
+
+        p
+          text-transform: uppercase
+          font-weight: 600
+          line-height: 1.2
+          width: 170px
+          margin-left: 24px
+          font-size: 16px
+          margin-top: 20px
+          @media(max-width: 700px)
+            margin-top: 0
+            font-size: 13px
+            width: 140px
+            margin-left: 17px
+      
+      .main-part__mobile-burger
+        margin-top: -10px
+        cursor: pointer
+        display: none
+        @media(max-width: 700px)
+          display: block
+
+
+      .main-part__menu
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        margin-top: 12px
+        margin-bottom: 55px
+        @media(max-width: 700px)
+          justify-content: center
+          margin-bottom: 36px
+          width: 100%
+        .top, .bottom
+          display: flex
+          justify-content: flex-end
+          width: 100%
+          flex-wrap: wrap
+          @media(max-width: 700px)
+            justify-content: center
+
+          
+          a
+            font-weight: 600
+            text-transform: uppercase
+            text-align: right
+            font-size: 13px
+            line-height: 30px
+            &.special
+              color: #FFCD1C
+            
+              
+
+          .link-group
+            position: relative
+            margin-left: 32px
+
+            &:first-child
+              margin-left: 0
+            @media(max-width: 700px)
+              margin-left: 0
+              margin-right: 20px
+              margin-top: 5px
+              text-align: left
+              &:first-child
+                margin-left: 0
+
+            .list-container
+              position: absolute
+              left: 0
+              top: 20px
+              width: 250px
+              height: 100px
+              &.right
+                left: unset
+                right: 0
+            
+            .list
+              display: none
+              width: 250px
+              background-color: white
+              padding: 8px 16px
+              left: 0
+              top: 20px
+              text-align: left
+              z-index: 10
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25)
+              position: absolute
+              &.is-open
+                display: block
+
+              
+              @media (max-width: 700px)
+                left: 50%
+                margin-left: -100px
+                max-width: 200px
+
+            
+              ::before
+                width: 10px
+                height: 10px
+                position: absolute
+                top: -5px
+                transform: rotate(45deg)
+                left: 15px
+                background-color: white
+                content: " "
+                @media (max-width: 700px)
+                  left: 50%
+                  margin-left: -5px
+              &.right
+                left: unset
+                right: 0
+                ::before
+                  width: 10px
+                  height: 10px
+                  position: absolute
+                  top: -5px
+                  transform: rotate(45deg)
+                  left: unset
+                  right: 15px
+                  background-color: white
+                  content: " "
+                  @media (max-width: 700px)
+                    left: 50%
+                    margin-left: -5px
+
+              .popper-arrow
+                width: 10px
+                height: 10px
+                transform: rotate(45deg)
+                background-color: white
+                content: " "
+                  
+              a
+                color: #002B3B
+                padding: 8px 0
+                border-bottom: 1px solid #DEDEDE
+                display: block
+                text-align: left
+                margin: 0
+                text-transform: none
+                font-size: 14px
+                font-family: TTNorms
+                font-weight: 400
+                &:last-child
+                  border: none
+            
+
+        .top
+          padding-bottom: 23px
+          img
+            cursor: pointer
+            margin-left: 32px
+            transition: .25s ease-in-out
+            @media(max-width: 700px)
+              margin-left: 0
+              display: block
+            &:hover
+              opacity: 0.7
+          @media(max-width: 700px)
+            display: none
+        .bottom
+          padding-top: 18px
+          @media(max-width: 700px)
+            text-align: left
+            justify-content: flex-start
+        .partner
+          margin-top: 42px
+          text-align: right
+          @media(max-width: 700px)
+            margin-top: 30px
+            text-align: left
+          a
+            border: 2px solid #FFCD1C
+            color: #FFCD1C
+            text-transform: uppercase
+            padding: 16px 20px
+            font-weight: 500
+            display: inline-block
+            text-align: center
+            @media(max-width: 800px)
+              width: 274px
+            @media(max-width: 400px)
+              width: 100%
+
+
+#menu-popup
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  overflow-x: hidden
+  overflow-y: auto
+  background-color: white
+  z-index: 1000
+  padding: 83px 0
+  display: none
+
+  a
+    border: none
+    &:hover
+      border: none
+
+  .container
+    position: relative
+
+    .close
+      position: absolute
+      cursor: pointer
+      right: 0
+      top: 0
+      transition: 0.25s ease-in-out
+      &:hover
+        opacity: 0.5
+
+    .link-blocks
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      margin-right: 20px
+      @media(max-width: 900px)
+        grid-template-columns: 1fr 1fr
+      @media(max-width: 700px)
+        grid-template-columns: 1fr
+
+      .list
+        margin-bottom: 32px
+
+        a.main
+          font-style: normal
+          font-weight: 500
+          font-size: 24px
+          line-height: 28px
+          color: #3EA3DC
+          mix-blend-mode: normal
+          margin-bottom: 27px
+          display: block
+          transition: 0.25s ease-in-out
+          &:hover
+            opacity: 0.8
+
+        .other
+          padding: 0 20px
+          border-left: 1px solid rgba(62, 163, 220, 0.2)
+
+          a
+            display: block
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 28px
+            letter-spacing: 0.5px
+            color: rgba(0, 0, 0, 0.6)
+            mix-blend-mode: normal
+            margin-bottom: 16px
+            &:hover
+              text-decoration: underline
+
+
+
+

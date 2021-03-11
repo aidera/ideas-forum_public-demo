@@ -1,0 +1,91 @@
+.hotels__container
+    margin-bottom: 100px
+
+    .hotels__item
+        margin-top: 100px
+        &:first-child
+            margin-top: 50px
+        .hotels__item__header
+            .title
+                text-transform: uppercase
+                color: #3ea3dc
+                font-weight: 600
+                font-size: 20px
+                border-width: 2px
+
+
+        .hotels__item__content
+            display: grid
+            grid-template-columns: 2fr 3fr
+            grid-gap: 30px
+            @media(max-width: 800px)
+                grid-template-columns: 1fr
+                grid-gap: 0
+            .description
+                p
+                    font-size: 14px
+                a
+                    font-size: 14px
+                img
+                    max-width: 100%
+                    margin-top: 10px
+                .button
+                    color: white
+                    border: 1px solid #3EA3DC
+                    padding: 4px 16px
+                    border-radius: 30px
+                    display: inline-block
+                    font-weight: 400
+                    background-color: #3EA3DC
+                    font-size: 16px
+                    line-height: 24px
+                    margin-top: 20px
+                    cursor: pointer
+                    &:hover
+                        opacity: 0.9
+                    @media(max-width: 800px)
+                        width: 100%
+                        text-align: center
+                .notes
+                    font-size: 14px
+                    margin-top: 10px
+                    color: #838383
+
+            .table
+                max-width: 100%
+                .table__header
+                    display: grid
+                    grid-template-columns: 4fr 3fr 3fr
+                    grid-gap: 30px
+                    align-items: flex-end
+                    margin-bottom: 30px
+                    border-bottom: 1px solid #d9d9d9
+                    padding-bottom: 10px
+                    max-width: 100%
+                    @media(max-width: 500px)
+                        grid-gap: 10px
+                    p
+                        color: #575960
+                        font-size: 12px
+                        text-align: right
+                        &:first-child
+                            text-align: left
+                .row
+                    display: grid
+                    grid-template-columns: 4fr 3fr 3fr
+                    grid-gap: 30px
+                    margin-bottom: 30px
+                    max-width: 100%
+                    @media(max-width: 500px)
+                        grid-gap: 10px
+                    .single-room, .double-room
+                        text-align: right
+
+                .notes
+                    font-size: 14px
+                    margin-top: 50px
+                    border-top: 1px solid #d9d9d9
+                    padding-top: 10px
+                    color: #838383
+                    max-width: 100%
+

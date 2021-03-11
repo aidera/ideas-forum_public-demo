@@ -1,0 +1,156 @@
+.uploads-section
+    margin-top: 64px !important
+
+.tabs-section
+    margin-top: 52px
+
+    .tab
+        color: #3EA3DC
+        border: 1px solid #3EA3DC
+        padding: 6px 20px
+        border-radius: 30px
+        display: inline-block
+        margin-right: 18px
+        margin-bottom: 18px
+        font-weight: 800
+        background-color: white
+        font-size: 18px
+        line-height: 36px
+        &:hover
+            border: 1px solid #3EA3DC
+        &.is-active
+            color: white
+            background-color: #3EA3DC
+
+    .tab-group
+        margin-bottom: 14px
+        &:last-child
+            margin-bottom: 0
+
+.programs-section
+    margin-top: 92px
+    margin-bottom: 152px !important
+
+    .program__element
+        display: flex
+        margin-bottom: 60px
+        @media(max-width: 700px)
+            flex-wrap: wrap
+
+        .left-part
+            width: 200px
+            margin-right: 30px
+            flex-shrink: 0
+            text-align: right
+            .date
+                font-size: 40px
+                color: #343434
+            .time
+                font-size: 26px
+                color: #343434
+                margin-top: 8px
+            .place
+                font-size: 20px
+                line-height: 24px
+                color: #343434
+                margin-top: 18px
+            @media(max-width: 700px)
+                width: 100%
+                margin-right: 0
+                text-align: left
+                margin-bottom: 30px
+
+        .right-part
+            padding-bottom: 32px
+            border-bottom: 1px solid #3EA3DC
+            .buttons
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                margin-bottom: 12px
+                a
+                    color: #3EA3DC
+                    border: 1px solid #3EA3DC
+                    padding: 4px 16px
+                    border-radius: 30px
+                    display: inline-block
+                    margin-right: 18px
+                    margin-bottom: 10px
+                    font-weight: 400
+                    background-color: white
+                    font-size: 16px
+                    line-height: 24px
+                    &:hover
+                        border: 1px solid #3EA3DC
+                    &:last-child
+                        background-color: #3EA3DC
+                        color: white
+            .content
+                h3
+                    font-size: 26px
+                    line-height: 36px
+                    font-weight: 800
+                    margin-bottom: 16px
+                .members
+                    .member-group
+                        margin-top: 32px
+                        strong, a
+                            font-weight: 600
+                        a
+                            border-bottom: 1px solid white
+                            &:hover
+                                border-color: #3EA3DC
+        &:last-child
+            .right-part
+                border-bottom: none
+
+
+.program-page-heading-block
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    align-content: flex-start
+    margin-top: 72px
+    @media (max-width: 1000px)
+        flex-wrap: wrap
+    > *
+        margin: 0
+        padding: 0
+        margin-bottom: 14px
+        &:first-child
+            margin-right: 24px
+
+.program-page-search-form
+    position: relative
+    @media(max-width: 450px)
+        width: 100%
+    input
+        padding: 8px
+        padding-left: 40px
+        padding-right: 80px
+        font-size: 16px
+        border-radius: 20px
+        line-height: 16px
+        width: 300px
+        @media(max-width: 450px)
+            width: 100%
+    img
+        position: absolute
+        top: 50%
+        left: 8px
+        transform: translateY(-50%)
+    button
+        padding: 8px 14px
+        border-radius: 20px
+        font-size: 16px
+        line-height: 20px
+        background-color: #3EA3DC
+        color: white
+        border: none
+        outline: none
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        cursor: pointer
+

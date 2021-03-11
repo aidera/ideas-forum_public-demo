@@ -1,0 +1,351 @@
+extends ../../layout/layout
+
+block variables
+    - var title = 'Сильные идеи для нового времени'
+    - var keywords = 'Сильные идеи для нового времени'
+    - var description = 'Приглашаем вас принять участие в работе Форума «Сильные идеи для нового времени», который состоится в октябре 2020 года в Сочи на территории Парка науки и искусства «Сириус».'
+
+
+block main
+
+    header#index-header
+        .image-container
+            .image
+        img.decor.decor1(src="/images/decor-12.png")
+        img.decor.decor2(src="/images/decor-13.png")
+
+        .top-part
+            .container.top-part__container
+                .top-part__logos
+                    a(href="https://asi.ru")
+                        img(src="/images/logo-1.svg")
+                    a(href="https://roscongress.org/")
+                        img(src="/images/logo-2.svg")
+                .top-part__contacts
+                    a.phone(href="tel:+74956407868") +7 (495) 640 7868
+                    .socials
+                        a(href="https://www.facebook.com/pg/Ideasforum.ru/about/?ref=page_internal")
+                            img(src="/images/fb.svg")
+                        a(href="https://vk.com/ideasforum")
+                            img(src="/images/vk.svg")
+                        a(href="https://www.instagram.com/ideas.forum/")
+                            img(src="/images/insta.svg")
+
+        .main-part
+            .container.main-part__container
+
+                a(href="/index.html").main-part__title
+                    img(src="/images/decor-2.svg")
+                    p Сильные идеи для нового времени
+                img.main-part__mobile-burger.menu-popup-open(src="/images/burger-menu.svg")
+                .main-part__menu
+                    .top
+                        .link-group
+                            a(href="/forum.html") Форум
+                            .list-container
+                                .list
+                                    a(href="/#") Тест ссылка 1
+                                    a(href="/#") Тест ссылка 2
+                                    a(href="/#") Тест ссылка 3
+                        .link-group
+                            a(href="#") Программа
+                        .link-group
+                            a(href="/terms.html") Участникам
+                        .link-group
+                            a(href="/partners.html") Партнёры
+                        .link-group
+                            a(href="#") Подрядчикам
+                        .link-group
+                            a(href="#") СМИ
+                        .link-group
+                            a(href="#") Сервисы
+                        img.menu-popup-open(src="/images/burger-menu.svg")
+                    .bottom
+                        .link-group
+                            a(href="https://reg.ideas-forum.ru/ru") Войти в Личный кабинет
+                        .link-group
+                            a(href="https://reg.ideas-forum.ru/ru/registration") Оставить заявку на участие
+                        .link-group
+                            a.special(href="https://leader-id.ru/login/") Регистрация через Leader-ID
+                    .partner
+                        a(href="#")
+                            p Стать партнером
+
+        .big-title
+            .container
+                h1
+                    span.text-line-1 Форум
+                    span.text-line-2 Сильные идеи
+                    span.text-line-3 для нового
+                    span.text-line-4 времени
+                    span.text-line-5 27-28 сентября 2020, СОЧИ
+                .buttons
+                    a(href="/forum.html") Узнать больше о форуме
+                    a.special(href="https://idea.asi.ru/") Предложить идею
+                a.schema
+                    img(src="/images/map-pointer.svg")
+                    p Схема проезда
+
+
+
+
+
+
+    div#index-page.page-content
+
+        section.after-header-index-section
+            .container
+                ul.upper-section-block
+                    li
+                        h3 1 сентября 2020
+                        p Фонд «РК-Инвестиции» и Банк Интеза будут совместно развивать российские региональные проекты
+                        a(href="#")
+                            p Читать подробнее
+                            img(src="/images/link-arrow.svg")
+                    li
+                        h3 1 сентября 2020
+                        p Фонд «РК-Инвестиции» и Банк Интеза будут совместно развивать российские региональные проекты
+                        a(href="#")
+                            p Читать подробнее
+                            img(src="/images/link-arrow.svg")
+                    li
+                        h3 1 сентября 2020
+                        p Фонд «РК-Инвестиции» и Банк Интеза будут совместно развивать российские региональные проекты
+                        a(href="#")
+                            p Читать подробнее
+                            img(src="/images/link-arrow.svg")
+
+
+                .broadcasts
+                    ul
+                        li
+                            a(href="")
+                                .broadcast-img(style="background-image: url('images/gallery-1.jpg')")
+                                    .broadcast-play
+                                b Трансляция 1
+                        li
+                            a(href="")
+                                .broadcast-img(style="background-image: url('images/gallery-2.jpg')")
+                                    .broadcast-play
+                                b Трансляция 2
+                        li
+                            a(href="")
+                                .broadcast-img(style="background-image: url('images/gallery-3.jpg')")
+                                    .broadcast-play
+                                b Трансляция 3
+                        li
+                            a(href="")
+                                .broadcast-img(style="background-image: url('images/gallery-4.jpg')")
+                                    .broadcast-play
+                                b Трансляция 4
+                        li
+                            a(href="")
+                                .broadcast-img(style="background-image: url('images/gallery-5.jpg')")
+                                    .broadcast-play
+                                b Трансляция 5
+
+
+            .index-quotes-slider-container
+                .container
+                    #index-quotes-slider
+                        .item
+                            .main-text «На Российской неделе креативных индустрий поднимался вопрос от сообщества креативных индустрий, что нужна постоянная площадка для взаимодействия с органами власти. Могу сказать, что мы договорились на уровне Правительства Российской Федерации и Администрации Президента о том, что мы сформируем рабочую группу. Мы с вице-премьером Дмитрием Чернышенко, который курирует это направление, будем ее сопредседателями. Но работать она сможет только в том случае, если будет не государственной, а объединит представителей министерств, ведомств и креативных индустрий. Это то самое пространство, где в соответствии с требованиями креативных индустрий к работе в коллаборации, мы должны сами показать соответствующий пример».
+                            .person-name Сергей Кириенко
+                            .person-description Первый заместитель Руководителя Администрации Президента Российской Федерации
+
+                        .item
+                            .main-text 1
+                            .person-name Сергей Кириенко
+                            .person-description Первый заместитель Руководителя Администрации Президента Российской Федерации
+                        .item
+                            .main-text 2 «На Российской неделе креативных индустрий поднимался вопрос от сообщества креативных индустрий, ...».
+                            .person-name Сергей Кириенко
+                            .person-description Первый заместитель Руководителя Администрации Президента Российской Федерации
+                        .item
+                            .main-text 3 «На Российской неделе креативных индустрий поднимался вопрос от сообщества креативных индустрий, что нужна постоянная площадка для взаимодействия с органами власти. Могу сказать, что мы договорились на уровне Правительства Российской Федерации и Администрации Президента о том, что мы сформируем рабочую группу. Мы с вице-премьером Дмитрием Чернышенко, который курирует это направление, будем ее сопредседателями. Но работать она сможет только в том случае, если будет не государственной, а объединит представителей министерств, ведомств и креативных индустрий. Это то самое пространство, где в соответствии с требованиями креативных индустрий к работе в коллаборации, мы должны сами показать соответствующий пример».
+                            .person-name Сергей Кириенко
+                            .person-description Первый заместитель Руководителя Администрации Президента Российской Федерации
+
+
+            .subscribe-block
+                .container
+                    .subscribe-block-content
+                        .image(style="background-image: url('/images/instagram-head-image.svg')")
+                        .description
+                            strong @roscongress
+                            p 1 282 участников
+                        .flex-helper
+                        a.button Подписаться
+
+
+            .container
+                .slider-header
+                    img.quotes-img(src="/images/quotes.svg")
+                    h2 Уважаемые гости и участники форума «Сильные идеи для нового времени»
+                .slider
+                    #index-slider
+                        .item-container
+                            .item
+                                img.member(src="/images/member-1.png")
+
+                                .content
+                                    .text
+                                        b
+                                            | Председатель Оргкомитета,
+                                            | Первый заместитель Председателя
+                                            | Правительства Российской Федерации
+                                        strong Андрей Рэмович Белоусов
+                                    a.link(href="#")
+                                        p Читать полный текст
+                                        img(src="/images/link-arrow.svg")
+                        .item-container
+                            .item
+                                img.member(src="/images/member-1.png")
+
+                                .content
+                                    .text
+                                        b
+                                            | Председатель Оргкомитета,
+                                            | Первый заместитель Председателя
+                                            | Правительства Российской Федерации
+                                        strong Андрей Рэмович Белоусов
+                                    a.link(href="#")
+                                        p Читать полный текст
+                                        img(src="/images/link-arrow.svg")
+                        .item-container
+                            .item
+                                img.member(src="/images/member-1.png")
+
+                                .content
+                                    .text
+                                        b
+                                            | Председатель Оргкомитета,
+                                            | Первый заместитель Председателя
+                                            | Правительства Российской Федерации
+                                        strong Андрей Рэмович Белоусов
+                                    a.link(href="#")
+                                        p Читать полный текст
+                                        img(src="/images/link-arrow.svg")
+                        .item-container
+                            .item
+                                img.member(src="/images/member-1.png")
+
+                                .content
+                                    .text
+                                        b
+                                            | Председатель Оргкомитета,
+                                            | Первый заместитель Председателя
+                                            | Правительства Российской Федерации
+                                        strong Андрей Рэмович Белоусов
+                                    a.link(href="#")
+                                        p Читать полный текст
+                                        img(src="/images/link-arrow.svg")
+
+        section.about-forum-section
+            .container
+                .inner-container
+                    .content
+                        h2 О форуме
+                        p Это масштабное событие, организуемое с целью сформировать содружество инициативных людей и консолидировать 100 сильных идей, которые помогут выработать технологическую стратегию развития страны, а также найти команды, готовые приступить к реализации своих идей и проектов, тиражированию практик, способных обеспечить устойчивое развитие России в новых экономических условиях.
+                        br
+                        p Форум объединит лидеров и экспертов в сфере экономики, технологического и социального развития, НКО, образования, городской среды, представителей государства и неравнодушных граждан для совместного проектирования, сбора и широкого обсуждения таких идей и проектов.
+                        a.button(href="/forum.html") Узнать подробнее
+                    .image
+
+        section.partners-section
+            .container
+                h2 Партнеры
+                .list
+                    a(href="https://www.ranepa.ru/")
+                        img(src="/images/partner-1.svg")
+                    a(href="https://www.hse.ru/en/")
+                        img(src="/images/partner-2.jpg")
+                    a(href="https://2035.university/")
+                        img(src="/images/partner-3.png")
+                    a(href="https://tass.ru/")
+                        img(src="/images/partner-4.svg")
+                    a(href="https://www.worldbank.org/")
+                        img(src="/images/partner-5.png")
+                    a(href="https://veb.ventures/ru")
+                        img(src="/images/partner-6.png")
+                    a(href="https://rsv.ru/")
+                        img(src="/images/partner-7.jpg")
+                    a(href="http://www.rspp.ru/")
+                        img(src="/images/partner-8.png")
+
+
+        section.photobank-section
+            .container
+                .header
+                    h2 Фотобанк
+                    a.link(href="#")
+                        p Посмотреть все фотографии
+                        img(src="/images/link-arrow.svg")
+                .gallery
+                    .main
+                        a.gallery-item-1(href="#" style="background-image: url('images/gallery-1.jpg')")
+                    .others
+                        a.gallery-item-2(href="#" style="background-image: url('images/gallery-2.jpg')")
+                        a.gallery-item-3(href="#" style="background-image: url('images/gallery-3.jpg')")
+                        a.gallery-item-4(href="#" style="background-image: url('images/gallery-4.jpg')")
+                        a.gallery-item-5(href="#" style="background-image: url('images/gallery-5.jpg')")
+                a.mobile.link(href="#")
+                    p Посмотреть все фотографии
+                    img(src="/images/link-arrow.svg")
+
+        section.other-events-section
+            .container
+                h2 Мероприятия Фонда Росконгресс
+                .inner-container
+                    a(href="#")
+                        .image
+                            .bg(style="background-image: url('/images/content-image-2.png')")
+                            img(src="/images/logo-3.svg")
+                        .content
+                            strong Форум «Здоровое общество»
+                            span Россия
+                    a(href="#")
+                        .image
+                            .bg(style="background-image: url('/images/content-image-3.png')")
+                            img(src="/images/logo-4.svg")
+                        .content
+                            strong Российская энергетическая неделя
+                            span 13 - 16 октября 2020 <br />Москва, Россия
+                    a(href="#")
+                        .image
+                            .bg(style="background-image: url('/images/content-image-4.png')")
+                            img(src="/images/logo-5.svg")
+                        .content
+                            strong Восточный экономический форум
+                            span сентября 2021 <br />Владивосток, Россия
+                    a(href="#")
+                        .image
+                            .bg(style="background-image: url('/images/content-image-5.png')")
+                            img(src="/images/logo-6.svg")
+                        .content
+                            strong Петербургский международный экономический форум
+                            span 2021 <br />Санкт-Петербург, Россия
+
+
+        section
+            .container
+                table(border="1" style="border-collapse: collapse;" width="100%")
+                    tbody
+                        tr
+                            th
+                                p(align="center")
+                                    b МАРКА/МОДЕЛЬ
+                            th
+                                p(align="center")
+                                    b Стоимость аренды* (в рублях, за 1 час) без учета НДС 20%
+                        tr
+                            td
+                                p(align="center") Mercedes S-class, W221
+                            td
+                                p(align="center") 3 500
+
+                        tr
+                            td
+                                p(align="center") BMW 7 Series<br>Audi A8
+                            td
+                                p(align="center") 4 200

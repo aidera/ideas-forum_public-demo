@@ -1,0 +1,40 @@
+.hotel-rooms-section
+    ul
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 50px
+        margin-bottom: 30px
+        @media(max-width: 900px)
+            grid-template-columns: 1fr
+        li
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 10px
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15)
+            cursor: pointer
+            transition: .25s
+            @media(max-width: 500px)
+                grid-template-columns: 1fr
+            &:hover
+                box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15)
+                .image
+                    transform: scale(1.05)
+                    opacity: 1
+            .image
+                background-size: cover
+                background-position: center center
+                background-repeat: no-repeat
+                height: 100%
+                min-height: 200px
+                transition: .25s
+                opacity: 0.9
+                @media(max-width: 900px)
+                    min-height: 300px
+                @media(max-width: 700px)
+                    min-height: 200px
+
+            .content
+                padding: 20px
+                strong
+                    color: #3EA3DC
+                    font-size: 18px

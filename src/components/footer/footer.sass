@@ -1,0 +1,87 @@
+footer
+  background-color: #142248
+  background-image: url("/images/decor-3.png")
+  background-repeat: no-repeat
+  background-position: center top
+  background-size: cover
+  padding: 72px 0
+  color: white
+  overflow: hidden
+  @media(max-width: 700px)
+    padding: 56px 0
+
+  a
+    transition: .25s ease-in-out
+    border: none
+    color: white
+    &:hover
+      opacity: 0.7
+      border: none
+
+  .top-part
+
+    .top-part__container
+      display: flex
+      justify-content: space-between
+      padding-bottom: 64px
+      border-bottom: 1px solid #5D767F
+      flex-wrap: wrap
+      @media(max-width: 700px)
+        justify-content: flex-start
+        padding-bottom: 0
+
+      .logos, .contacts, .menu
+        @media(max-width: 700px)
+          width: 100%
+          text-align: left
+
+      .logos
+        user-select: none
+        @media(max-width: 700px)
+          margin-bottom: 70px
+        a
+          display: block
+          margin-bottom: 24px
+          img
+            height: 100%
+          &:first-child
+            height: 40px
+          &:last-child
+            height: 59px
+          @media(max-width: 700px)
+            display: inline-block
+            margin: 0
+            margin-right: 20px
+            margin-bottom: 20px
+
+      .menu
+        a
+          font-weight: 600
+          margin-left: 40px
+          text-transform: uppercase
+          display: block
+          margin-bottom: 24px
+          @media(max-width: 700px)
+            display: none
+
+      .contacts
+        > *
+          display: block
+          margin-bottom: 24px
+        *
+          font-weight: 600
+        .socials
+          user-select: none
+          a
+            display: inline-flex
+            margin-right: 15px
+            align-content: center
+            align-items: center
+            &:last-child
+              margin-right: 0
+
+  .bottom-part
+    margin-top: 32px
+    a
+      color: white
+      border-color: white

@@ -1,0 +1,158 @@
+extends ../../layout/layout
+
+block variables
+    - var title = 'Программа - Сильные идеи для нового времени'
+    - var keywords = 'Сильные идеи для нового времени, программа'
+    - var description = 'Приглашаем вас принять участие в работе форума «Сильные идеи для нового времени», который состоится в октябре 2020 года в Сочи на территории Парка науки и искусства «Сириус».'
+
+
+block main
+
+        div#default-page-top
+            .container
+                nav.breadcrumbs
+                    a(href="/") Главная
+                    p /
+                    a(href="/") Программа
+                    p /
+                    p Деловая программа
+                
+                nav.second_level_menu
+                    a.is-active(href="#") Деловая программа
+                    a(href="#") Культурная программа
+                    a(href="#") Спортивная программа
+
+                .program-page-heading-block
+                    h1 Деловая программа
+                    form.program-page-search-form
+                        input(placeholder="Поиск")
+                        img(src="/images/search.svg")
+                        button Найти
+
+        div#program-page.page-content
+
+            section.uploads-section
+                .container
+                    a.upload-file(href="#")
+                        img(src="/images/upload.svg")
+                        p Скачать программу (версия для печати)
+                    a.upload-file(href="#")
+                        img(src="/images/upload.svg")
+                        p Скачать архитектуру программы (версия для печати)
+
+            section.tabs-section
+                .container
+                    .tab-group
+                        a.tab.is-active Все
+                        a.tab Тест ссылка 1
+                        a.tab Тест ссылка 2
+                        a.tab Тест ссылка 3
+                        a.tab Тест ссылка 1
+                        a.tab Тест ссылка 2
+                    .tab-group
+                        a.tab Тест ссылка 3
+                        a.tab Тест ссылка 1
+                        a.tab Тест ссылка 2
+                        a.tab Тест ссылка 3
+                        a.tab Тест ссылка 1
+                        a.tab Тест ссылка 2
+                        a.tab Тест ссылка 3
+                        a.tab Тест ссылка 1
+                        a.tab Тест ссылка 2
+                        a.tab Тест ссылка 3
+
+            section.programs-section
+                .container
+                    .program__element
+                        .left-part
+                            .date 01.01.2020
+                            .time 09:00-13:00
+                            .place Место проведения место проведения
+                        .right-part
+                            .buttons
+                                a Тематика сессии
+                                a Смотреть трансляцию
+                            .content
+                                h3 Заголовок сессии
+                                .description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .members
+                                    .member-group
+                                        strong Модератор:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+                                    .member-group
+                                        strong Выступающие:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+                                        p <a href="#">Джанни Бардацци</a> — Заместитель Председателя Правительства Российской Федерации – полномочный представитель Президента Российской Федерации в Дальневосточном федеральном округе
+                                    .member-group
+                                        strong Участник дискуссии:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+                    .program__element
+                        .left-part
+                            .date 01.01.2020
+                            .time 09:00-13:00
+                            .place Место проведения место проведения
+                        .right-part
+                            .buttons
+                                a Тематика сессии
+                                a Смотреть трансляцию
+                            .content
+                                h3 Заголовок сессии
+                                .description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .members
+                                    .member-group
+                                        strong Модератор:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+                                    .member-group
+                                        strong Выступающие:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+                                        p <a href="#">Джанни Бардацци</a> — Заместитель Председателя Правительства Российской Федерации – полномочный представитель Президента Российской Федерации в Дальневосточном федеральном округе
+                                    .member-group
+                                        strong Участник дискуссии:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+                    .program__element
+                        .left-part
+                            .date 01.01.2020
+                            .time 09:00-13:00
+                            .place Место проведения место проведения
+                        .right-part
+                            .buttons
+                                a Тематика сессии
+                                a Смотреть трансляцию
+                            .content
+                                h3 Заголовок сессии
+                                .description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .members
+                                    .member-group
+                                        strong Модератор:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+                                    .member-group
+                                        strong Выступающие:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+                                        p <a href="#">Джанни Бардацци</a> — Заместитель Председателя Правительства Российской Федерации – полномочный представитель Президента Российской Федерации в Дальневосточном федеральном округе
+                                    .member-group
+                                        strong Участник дискуссии:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+                    .program__element
+                        .left-part
+                            .date 01.01.2020
+                            .time 09:00-13:00
+                            .place Место проведения место проведения
+                        .right-part
+                            .buttons
+                                a Тематика сессии
+                                a Смотреть трансляцию
+                            .content
+                                h3 Заголовок сессии
+                                .description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                .members
+                                    .member-group
+                                        strong Модератор:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+                                    .member-group
+                                        strong Выступающие:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+                                        p <a href="#">Джанни Бардацци</a> — Заместитель Председателя Правительства Российской Федерации – полномочный представитель Президента Российской Федерации в Дальневосточном федеральном округе
+                                    .member-group
+                                        strong Участник дискуссии:
+                                        p <a href="#">Константин Выборнов</a> — Руководитель службы информации, пресс-секретарь, Олимпийский комитет России
+

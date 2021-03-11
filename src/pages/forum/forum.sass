@@ -1,0 +1,112 @@
+.purpose-section
+  .suggestion
+    background: linear-gradient(269.93deg, #00D0C4 0.27%, rgba(0, 178, 146, 0) 99.94%), #3EA3DC
+    position: relative
+    overflow: hidden
+    padding: 42px 111px 46px 166px
+    margin-top: 32px
+    @media(max-width: 700px)
+      padding: 42px 24px
+      padding-top: 107px
+
+    .suggestion__image
+      position: absolute
+      left: 0
+      top: 0
+      width: 215px
+      height: 100%
+      background-image: url("/images/decor-4.svg")
+      background-position: center center
+      background-size: cover
+      background-repeat: no-repeat
+      z-index: 1
+      @media(max-width: 700px)
+        top: -30px
+        width: 200px
+        background-size: contain
+        background-position: top left
+        background-image: url("/images/decor-4-2.svg")
+
+    .suggestion__content
+      color: white
+      display: flex
+      align-content: center
+      align-items: center
+      justify-content: space-between
+      position: 
+      z-index: 2
+      @include container-down
+        flex-wrap: wrap
+      .suggestion__text
+        width: 618px
+        position: relative
+        z-index: 2
+        @include container-down
+          width: 444px
+        strong
+          font-size: 18px
+      .suggestion__button
+        position: relative
+        z-index: 2
+        @include container-down
+          margin-top: 32px
+        a
+          display: inline-block
+          text-transform: uppercase
+          border: 2px solid white
+          color: white
+          padding: 16px 20px
+          background: rgba(255,255,255,0)
+          transition: .25s ease-in-out
+          &:hover
+            background: rgba(255,255,255,0.3)
+
+
+.program-section
+  .program
+    margin-top: 84px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-gap: 83px
+    @include container-down
+      grid-template-columns: 1fr 1fr 1fr
+    @media(max-width: 700px)
+      grid-template-columns: 1fr 1fr
+    @media(max-width: 450px)
+      grid-template-columns: 1fr
+    .program__elem
+      text-align: center
+      .program__elemImage
+        display: inline-block
+        text-align: center
+        margin-bottom: 26px
+        height: 120px
+        img
+          display: inline-block
+      .program__elemText
+        text-align: center
+
+
+
+.benefits-section
+  a
+    border: none
+    &:hover
+      border: none
+      
+  ul
+    margin-top: 24px
+    margin-bottom: 48px
+    padding-left: 16px
+    @media (max-width: 700px)
+      padding-left: 0
+    li
+      margin-top: 16px
+  a.button
+    background-color: #3EA3DC
+    padding: 15.5px 16px
+    text-transform: uppercase
+    display: inline-block
+    color: white
+    font-weight: 600
+    margin-top: 32px

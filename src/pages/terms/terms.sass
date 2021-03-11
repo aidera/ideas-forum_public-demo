@@ -1,0 +1,146 @@
+.terms-of-participation-section
+  .accordion
+    margin-top: 48px
+    margin-bottom: 32px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 30px
+    @media(max-width: 1000px)
+      grid-template-columns: 1fr
+    .accordion__elem
+      display: flex
+      flex-direction: column
+      .accordion__elem-header
+        padding-bottom: 16px
+        border-bottom: 2px solid #3EA3DC
+        margin-bottom: 4px
+        width: 100%
+        h3
+          font-weight: bold
+          font-size: 18px
+          line-height: 24px
+          color: #3EA3DC
+      .accordion__elem-content
+        padding: 32px
+        flex-grow: 1
+        box-shadow: 0 1px 5px rgba(121, 121, 121, 0.3)
+        p
+          margin: 0
+
+.packages-and-participation-fees-section
+  .packages
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 30px
+    margin-top: 41px
+    margin-bottom: 32px
+    @media(max-width: 700px)
+      grid-template-columns: 1fr
+    .package
+      box-shadow: 0 1px 5px rgba(121, 121, 121, 0.3)
+      display: grid
+      grid-template-columns: 1fr 172px
+      @media(max-width: 1100px)
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 150px
+      .main
+        padding: 32px
+        .header
+          border-bottom: 1px solid #E0E0E0
+          padding-bottom: 20px
+          p:first-child
+            margin-top: 0
+          p.price
+            font-size: 36px
+            line-height: 42px
+          p.note
+            margin-top: 0
+        .content
+          .disable
+            color: #281E39
+      .image
+        background-size: cover
+        background-position: left center
+        background-repeat: no-repeat
+        @media(max-width: 1100px)
+          background-position: top center
+
+
+
+    .package-1
+      .main
+        .header
+          p.price, p.note
+            color: #EA5B0C
+      .image
+        background-image: url("/images/package-1.svg")
+        @media(max-width: 1100px)
+          background-image: url("/images/package-1-rotate.svg")
+
+    .package-2
+      .main
+        .header
+          p.price, p.note
+            color: #3EA3DC
+      .image
+        background-image: url("/images/package-2.svg")
+        @media(max-width: 1100px)
+          background-image: url("/images/package-2-rotate.svg")
+
+.quotas-section
+  .quotas
+    margin-top: 48px
+    margin-bottom: 32px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 30px
+    @media(max-width: 900px)
+      grid-template-columns: 1fr
+    .quota
+      display: flex
+      flex-direction: column
+      .quota__header
+        display: flex
+        @media(max-width: 500px)
+          justify-content: space-between
+        .quota__headerElem
+          img
+            margin-left: 20px
+          strong
+            display: block
+          &:first-child
+            margin-right: 45px
+            @media(max-width: 500px)
+              margin-right: 0
+        .quota__headerPlus
+          transform: translate(-45px, 15px)
+          @media(max-width: 500px)
+            transform: translate(-15px, 15px)
+      .quota__content
+        flex-grow: 1
+        margin-top: 24px
+        p
+          margin: 0
+
+
+.consideration-of-the-application-section
+  strong
+    font-weight: 700
+
+.certificate-of-absence-of-COVID-19-section
+  .inner-container
+    background-color: rgba(181,224,241, 0.2)
+    padding: 42px 32px
+  h2
+    margin-top: 0
+  @media (max-width: 700px)
+    .container
+      width: 100%
+    .inner-container
+      padding: 42px 5%
+
+
+
+
+
+
